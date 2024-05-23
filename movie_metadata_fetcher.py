@@ -31,7 +31,7 @@ def convert_imdb_votes(imdb_votes):
     return imdb_votes.replace(',', '')
 
 # Open the CSV file containing movie titles
-with open('movie_titles.csv', mode='r', encoding='utf-8') as file:
+with open('movie_titles_wikipedia.csv', mode='r', encoding='utf-8') as file:
     csv_reader = csv.reader(file)
     next(csv_reader)  # Skip the first row
     # Prepare to write to a new CSV file
